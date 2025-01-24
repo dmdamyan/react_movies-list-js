@@ -2,13 +2,13 @@
 
 import './App.scss';
 import moviesFromServer from './api/movies.json';
-import { Sidebar } from './components/Sidebar';
 import { MovieList } from './components/MovieList';
+import { Sidebar } from './components/Sidebar';
 
 export const App = () => (
   <div className="page">
     <div className="page-content">
-      <MovieList moviesFromServer={moviesFromServer} />
+      <MovieList movies={moviesFromServer} />
     </div>
 
     <Sidebar />
